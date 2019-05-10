@@ -10,4 +10,4 @@
 - Python
 - Java
 
-# <img src="/img/xpath.png" width="24" height="24"> xPath
+# <img src="/img/xpath.png" width="64" height="30"> xPath
