@@ -1,0 +1,16 @@
+-- Find Elements --
+
+Locator for: 
+
+- resource-id - id:
+- content-desc - accessibility_id:
+- text - text("")
+
+
+-- find_element
+find_element(id: "action_search")
+
+
+
+-- Find Elemtn by Xpath
+find_element(id: "keypad").find_element(xpath: "//android.widget.Button[@text='#{num}']").click

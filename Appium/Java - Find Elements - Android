@@ -1,0 +1,54 @@
+//USING SINGLE PROPERTIES - UI Automator Viewer
+
+
+
+
+//By - Resource-ID
+driver.findElementByAndroidUIAutomator("new UiSelector().resourceId(\"__Resource-ID__\")").click();
+
+
+
+//By - Text
+driver.findElementByAndroidUIAutomator("new UiSelector().text(\"__TEXT__\")").click();
+
+//By - Text Contains
+driver.findElementByAndroidUIAutomator("new UiSelector().textContains(\"__T__\")").click();
+
+
+
+//By - Description
+driver.findElementByAndroidUIAutomator("new UiSelector().description(\"__Content-Desc__\")").click();
+
+//By - Content-Description -- ???
+driver.findElementByAndroidUIAutomator("new UiSelector().descriptionContains(\"__Content-Desc__\")").click();
+
+//By - Description Matches -- ???
+driver.findElementByAndroidUIAutomator("new UiSelector().descriptionMatches(\"__Content-Desc__. *?\")").click();
+
+
+
+
+//By - Checked
+driver.findElementByAndroidUIAutomator("new UiSelector().checked(__true|false__)").click();
+
+
+
+//By - Index
+driver.findElementByAndroidUIAutomator("new UiSelector().text(__1__)").click();
+
+
+
+//Changing Properties
+
+//By - Resource-ID - Text - Checked
+driver.findElementByAndroidUIAutomator("new UiSelector().resourceId(\"__Resource-ID__\").text(\"__TEXT__\").checked(__true__)").click();
+
+
+
+//How to find Elements
+List<WebElement> allElements = driver.findElements(By.xpath("//*[@id='resultTable']//td[3]/a"));
+
+for (WebElement el: allElements) {
+    String name = el.getText();
+    System.out.println(name);
+}

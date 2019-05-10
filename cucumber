@@ -1,0 +1,17 @@
+cucumber --dry-run -- Проверка на пусные шаги в сценарии
+cucumber -t @qwip -- Запуск выбранного сценания 
+
+cucumber --init -- Создание cucumber project
+
+
+Запускать из под RubyMine для получения appActivity
+ 
+adb shell dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'
+
+
+Sergeys-MacBook-Pro:Lomotiv sergey$ adb shell dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'
+  mCurrentFocus=Window{b179b1 u0 com.lomotif.android/com.lomotif.android.app.ui.main.LMTabActivity_}
+  mFocusedApp=AppWindowToken{7a9fca token=Token{2811f35 ActivityRecord{45b9d6c u0 com.lomotif.android/.app.ui.main.LMTabActivity_ t237}}}
+
+
+Результат -- LMTabActivity_

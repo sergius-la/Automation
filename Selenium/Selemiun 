@@ -1,0 +1,169 @@
+Selemiun - Actions
+
+import org.openqa.selenium.interactions.Actions;
+
+Actions actions = new Actions(driver);
+
+
+// -- // 
+
+
+//Chain Actions
+private By admin = By.id("menu_admin_viewAdminModule");
+private By configurations = By.id("menu_admin_Configuration");
+private By emailSubscriptions = By.id("menu_admin_viewEmailNotification");
+
+public void goToEmailSubscriptions() {
+        actions.moveToElement(driver.findElement(admin));
+        actions.moveToElement(driver.findElement(configurations));
+        actions.click(driver.findElement(emailSubscriptions));
+        actions.perform();
+}
+
+
+public void goToEmailSubscriptions(){       
+    actions.moveToElement(driver.findElement(admin)).moveToElement(driver.findElement(configurations)).click(driver.findElement(emailSubscriptions)).perform();
+}
+
+
+$$$
+
+Selemiun - Java - Page Source
+
+//Get Page Source
+driver.getPageSource()
+
+###
+
+
+Selemiun - Java - Title
+
+//Get Title
+driver.getTitle();
+
+###
+
+import org.openqa.selenium.By;
+
+
+
+id
+className
+xPath
+name
+cssSelector
+linkText
+partialLinkText
+tagName
+
+###
+
+
+
+//Recomend to download the ChromeDriver to the project folder
+http://chromedriver.chromium.org/downloads 
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+private static WebDriver driver;
+
+	public static void setUpChromeDriver() {
+        String projectPath = System.getProperty("user.dir"); //Path to project folder
+        String chromeDriverPath = "/src/main/java/drivers/chromedriver"; //Path to ChromeDriver
+        System.setProperty("weddriver.chrome.driver", projectPath + chromeDriverPath);
+        
+		driver = new ChromeDriver();
+}
+	
+	
+	
+@@@
+
+	
+//Find Element by link name
+driver.findElement(By.linkText("__linkName__"));
+
+@@@
+
+
+https://github.com/mozilla/geckodriver/releases
+//Recomend to add gecodriver to the project folder
+
+String projectPath = System.getProperty("user.dir"); //Path to project folder
+System.setProperty("weddriver.gecko.driver", "projectPath" + "__path to Gecodriver__");
+
+@@@
+
+
+//Input Field Get Text -- .getAttribute("value")
+
+private By skillInputFileds = By.xpath("//input[@class='form-control ng-scope ng-pristine ng-valid ng-valid-required']");
+
+public void getTextFromInputField() {
+
+		List<WebElement> listOfElements = driver.findElements(skillInputFileds);
+		for (WebElement element : listOfElements) {
+			System.out.println(element.getAttribute("value"));
+	}
+}
+
+
+###
+
+
+
+import org.openqa.selenium.JavascriptExecutor;
+
+JavascriptExecutor js = (JavascriptExecutor) driver;
+
+String domain_name = (String) js.executeScript("return document.domain");
+
+System.out.println(domain_name);
+
+###
+
+    //Navigation
+	
+	public void openNewTab(By by) {
+		driver.findElement(by).sendKeys(Keys.COMMAND, "t", Keys.RETURN);
+	}
+
+	public void navigateToHomepage(String link) {
+		driver.get(link);
+	}
+
+	public void switchToNewTab() {
+		tabs = new ArrayList<String> (driver.getWindowHandles());
+	    driver.switchTo().window(tabs.get(1));
+	}
+	
+	public void closeNewTab() {
+	    driver.close();
+	    driver.switchTo().window(tabs.get(0)); 
+	}
+	
+	
+	
+	
+	
+	
+	
+###
+
+//Mac
+public void openNewTab(By by) {
+		driver.findElement(by).sendKeys(Keys.COMMAND, "t", Keys.RETURN);
+}
+
+@@@
+
+
+//Press keyboard Button
+.sendKeys(Keys.RETURN);
+
+@@@
+
+
+import org.openqa.selenium.WebDriver;

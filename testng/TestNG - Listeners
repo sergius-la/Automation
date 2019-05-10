@@ -1,0 +1,13 @@
+1. Create a class listeners
+2. Implement ITestListener interface
+3. Add listeners into TestNG.xml
+
+import org.testng.ITestListener;
+
+public class Listeners implements ITestListener {
+    
+}
+
+<listeners>
+		<listener class-name="utility.Listeners" />
+</listeners>

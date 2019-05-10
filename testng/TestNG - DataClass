@@ -1,0 +1,19 @@
+import org.testng.annotations.DataProvider; 
+
+public class DataClass { //1. Create a DaraClass
+
+	@DataProvider(name = "Dice Credentials") //2. Add TestNG annotation @DataProvider
+	public static Object[][] diceCredintials() { //3. Data returning in a multidimensional array
+		
+		return new Object[][] {
+			{"logIn", "pass"},
+		};
+	}
+}
+
+
+@Test(dataProvider = "Dice Credentials", dataProviderClass = DataClass.class) //4. In a test add anotation
+	public static void changeSkillYearExp(String email, String pass) throws InterruptedException //5. Specify arguments
+}
+
+

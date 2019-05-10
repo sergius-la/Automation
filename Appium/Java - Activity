@@ -1,0 +1,24 @@
+// -- Change Activity -- //
+
+System.out.println(driver.currentActivity());
+
+//Template for a New Activity
+
+String drPackage = "displayride.displayrideandroidapp";
+String drActivity = "displayride.displayrideandroidapp.MainActivity";
+
+Activity activity2 = new Activity(drPackage, drActivity);
+
+activity2.setAppWaitActivity(drActivity);
+activity2.setAppWaitActivity(drActivity);
+
+activity2.setStopApp(false);
+
+((AndroidDriver) driver).startActivity(activity2);
+
+System.out.println(driver.currentActivity());
+
+	
+//Search New Elements only by xPath
+String text = driver.findElement(By.xpath("//android.widget.TextView[@resource-id='displayride.displayrideandroidapp:id/txtPreview']")).getAttribute("text");
+System.out.println(text);

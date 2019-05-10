@@ -1,0 +1,14 @@
+
+// Press Home Button
+driver.pressKeyCode(AndroidKeyCode.HOME);
+
+
+
+
+
+//Sleep
+try {
+    Thread.sleep(__miliseconds__);
+} catch (InterruptedException e) {
+    e.printStackTrace();
+}

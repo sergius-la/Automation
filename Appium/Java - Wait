@@ -1,0 +1,9 @@
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+//TODO Разобраться, что где создается
+private WebDriverWait wait;
+wait = new WebDriverWait(driver, 5);
+
+
+
+wait.until(ExpectedConditions.presenceOfElementLocated(__locator__));
