@@ -1,0 +1,2 @@
+Get Atribute
+https://appium.readthedocs.io/en/stable/en/commands/element/attributes/attribute/

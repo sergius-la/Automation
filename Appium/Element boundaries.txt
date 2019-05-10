@@ -1,0 +1,2 @@
+Get boundaries of the element:
+https://discuss.appium.io/t/is-there-anyway-to-get-the-bounds-properties-of-element-using-appium/17215/2

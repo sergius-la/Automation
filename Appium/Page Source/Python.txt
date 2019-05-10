@@ -1,0 +1,2 @@
+page_source = self.driver.page_source
+print(page_source)
