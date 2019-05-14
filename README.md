@@ -1,3 +1,7 @@
+<!-- [_Stack Overflow: _]() -->
+<!-- [_GitHub: _]() -->
+<!-- [____]() -->
+
 # Automation
 
 # <img src="/img/selenium_icon.jpg" width="24" height="24"> Selenium
@@ -7,6 +11,7 @@
 
 # <img src="/img/appium.png" width="24" height="24"> Appium
 
+- [__Appium Notes__](/Appium/Appium.md)
 - Python
 - Java
 
