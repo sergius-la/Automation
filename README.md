@@ -6,14 +6,11 @@
 
 # <img src="/img/selenium_icon.jpg" width="24" height="24"> Selenium
 
-- Python
-- Java
+- [__Selenium Notes__]
 
 # <img src="/img/appium.png" width="24" height="24"> Appium
 
 - [__Appium Notes__](/Appium/Appium.md)
-- Python
-- Java
 
 # <img src="/img/xctest.jpg" width="24" height="24"> XCUITest
 

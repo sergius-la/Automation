@@ -1,7 +1,0 @@
--- Start WebDriverAgent only with Developer Sertificate --
-
-1 -- Navigate to WebDriverAgent Directory
-cd /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent
-
-2 -- Start WebDriverAgent
-xcodebuild build-for-testing test-without-building -project WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination 'platform=iOS,name=__iPhone name__'

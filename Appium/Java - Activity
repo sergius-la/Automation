@@ -17,8 +17,3 @@ activity2.setStopApp(false);
 ((AndroidDriver) driver).startActivity(activity2);
 
 System.out.println(driver.currentActivity());
-
-	
-//Search New Elements only by xPath
-String text = driver.findElement(By.xpath("//android.widget.TextView[@resource-id='displayride.displayrideandroidapp:id/txtPreview']")).getAttribute("text");
-System.out.println(text);

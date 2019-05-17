@@ -1,2 +1,0 @@
-Python Get Text
-http://appium.io/docs/en/commands/element/attributes/text/ 

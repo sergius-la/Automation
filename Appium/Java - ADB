@@ -1,2 +1,0 @@
-//String for ADB path
-String adbPath = System.getenv("ANDROID_HOME") + "/platform-tools/adb";

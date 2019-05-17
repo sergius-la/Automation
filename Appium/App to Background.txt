@@ -1,2 +1,0 @@
-Background App
-https://appium.readthedocs.io/en/latest/en/commands/device/app/background-app/

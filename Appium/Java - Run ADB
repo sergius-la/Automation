@@ -1,3 +1,0 @@
-
-Пример
-Runtime.getRuntime().exec("/Users/sergey/Library/Android/sdk/platform-tools/adb reboot")
