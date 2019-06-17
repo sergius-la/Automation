@@ -1,4 +1,5 @@
 <!-- [_Appium docs: _]() -->
+<!-- [_Appium discuss: _]() -->
 
 # Appium
 
@@ -73,3 +74,7 @@ String tagName = element.getAttribute("content-desc");
 ## adb
 
 [__adb commands__](https://github.com/sergius-la/Cheatsheet/blob/master/adb.md)
+
+## Android - Native Notifications
+
+[_Appium discuss: Native Notifications_](https://discuss.appium.io/t/can-we-get-device-notifications-using-androidriver/5844)
