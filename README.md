@@ -6,13 +6,14 @@
 
 # <img src="/img/selenium_icon.jpg" width="24" height="24"> Selenium
 
-- [_Docs: Selenium with Python_](https://selenium-python.readthedocs.io/)
 - [__`Selenium Notes`__]
+- [_Docs: Selenium with Python_](https://selenium-python.readthedocs.io/)
 
 # <img src="/img/appium.png" width="24" height="24"> Appium
 
-- [_Appium docs_](https://appium.io/docs/en/about-appium/intro/)
 - [__`Appium Notes`__](/Appium/Appium.md)
+- [_Appium docs_](https://appium.io/docs/en/about-appium/intro)
+
 
 # <img src="/img/xctest.jpg" width="24" height="24"> XCUITest
 
